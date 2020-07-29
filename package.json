@@ -1,0 +1,24 @@
+{
+  "name": "paypal-payment",
+  "version": "1.0.0",
+  "description": "Node.js + React.js with materializecss",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Eugene <uchiha659@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
